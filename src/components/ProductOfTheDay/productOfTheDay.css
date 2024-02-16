@@ -1,0 +1,78 @@
+.product-of-day-section{
+    width: 100%;
+}
+
+.product-of-day-section .container{
+    background-color: #F5F5F5;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.product-of-day-section .container .left{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.product-of-day-section .container .left img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.product-of-day-section .container .right{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-of-day-section .container .right h3{
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--text-color);
+}
+
+.product-of-day-section .container .right p{
+    font-size: 18px;
+    width: 80%;
+    color: var(--text-color);
+}
+
+@media (max-width:750px) {
+    .product-of-day-section .container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .product-of-day-section .container .left{
+        width: 100%;
+    }
+
+    .product-of-day-section .container .right{
+        width: 100%;
+        align-items: center;
+    }
+    
+    .product-of-day-section .container .right h3{
+        text-align: center;
+    }
+    
+    .product-of-day-section .container .right p{
+        text-align: center;
+    }
+}
+
+@media (max-width:375px) {
+    .product-of-day-section .container .right h3{
+        font-size: 23px;
+    }
+}

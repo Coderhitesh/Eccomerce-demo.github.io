@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './header.css'
 import { Link } from 'react-router-dom'
+import logo from './Logo.png'
 
 const Header = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false)
@@ -38,11 +39,14 @@ const Header = () => {
         return () => {
             document.removeEventListener('click', handleOutsideClick);
         };
-    }, []);     return (
+    }, []);     
+    return (
         <>
             <header>
                 <div className='container w-full flex justify-between items-center relative'>
-                    <div className='logo'><h2>LO<span>GO</span></h2></div>
+                    <div className='logo'>
+                        <img src={logo} alt='Logo' />
+                    </div>
                     <div className='right'>
                         <nav>
                             <ul className={`main-navbar ${isMob ? 'mob-nav' : ''}`}>

@@ -1,0 +1,113 @@
+.grab-product-secton{
+    width: 100%;
+}
+
+.grab-product-secton .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #F2295B;
+    height: 130px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: center;
+}
+
+.grab-product-secton .container .left{
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+
+.grab-product-secton .container .left h3{
+    font-size: 27px;
+    font-weight: 900;
+}
+
+
+.grab-product-secton .container .right{
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grab-product-secton .container .right a{
+    border: 2px solid white;
+    font-size: 18px;
+    padding: 8px 5px;
+    padding-right: 16px;
+    border-left: none;
+    color: white;
+}
+
+@media (max-width:967px) {
+    
+.grab-product-secton .container .left h3{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.grab-product-secton .container .right{
+    width: 37%;
+}
+
+.grab-product-secton .container .left{
+    width: 60%;
+}
+}
+
+@media (max-width:714px) {
+    
+.grab-product-secton .container .left h3{
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.grab-product-secton .container .right a{
+    border: 2px solid white;
+    font-size: 16px;
+    padding: 7px 4px;
+    padding-right: 16px;
+    border-left: none;
+    color: white;
+}
+}
+
+
+@media (max-width:633px) {
+
+    .grab-product-secton .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+.grab-product-secton .container .left{
+    width: 100%;
+    justify-content: center;
+}
+    
+.grab-product-secton .container .right{
+    width: 100%;
+    justify-content: center;
+}
+    
+.grab-product-secton .container .left h3{
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.grab-product-secton .container .right a{
+    border: 2px solid white;
+    font-size: 15px;
+    padding: 7px 3px;
+    padding-right: 16px;
+    border-left: none;
+    color: white;
+}
+}

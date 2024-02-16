@@ -39,6 +39,7 @@
     padding: 8px 5px;
     padding-right: 16px;
     border-left: none;
+    color: var(--text-color);
 }
 
 .hero-section .container .hero-image{
@@ -50,10 +51,6 @@
 
 .hero-section .container .hero-image img{
     width: 100%;
-}
-
-@media (max-width:1000px) {
-    
 }
 
 @media (max-width:878px) {
