@@ -11,7 +11,7 @@ const ProductOfTheDay = () => {
                 </div>
                 <div className="right">
                     <h3>#T-SHIRTOFTHEMONTH</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <p>Discover our monthly featured t-shirt designs, curated for style and quality. Stay on-trend with exclusive prints and comfortable fabrics. Shop now and elevate your wardrobe!</p>
                     <h3>JUST $35!!!</h3>
                 </div>
             </div>

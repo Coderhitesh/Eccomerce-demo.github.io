@@ -1,0 +1,281 @@
+.contact-section {
+    width: 100%;
+}
+
+.contact-section .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 30px 50px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-section .container .contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-section .container .contact-box .heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    line-height: 1;
+}
+
+.contact-section .container .contact-box .heading span {
+    font-size: 35px;
+    font-weight: 700;
+    font-variant: small-caps;
+    position: relative;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.contact-section .container .contact-box .heading span::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #1a1f24;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.contact-section .container .contact-box .heading p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.contact-section .container .contact-box .contact-detail {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border-radius: 10px;
+    /* height: 200px; */
+
+
+    background: rgba(255, 255, 255, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.43);
+
+    overflow: hidden;
+}
+
+.contact-section .container .contact-box .contact-detail .left {
+    background-color: #FAF7F5;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    padding: 20px 25px;
+}
+
+.contact-section .container .contact-box .contact-detail .left h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.contact-section .container .contact-box .contact-detail .left p {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.contact-section .container .contact-box .contact-detail .left .call-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--text-color);
+}
+
+.contact-section .container .contact-box .contact-detail .left .call-left h4 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.contact-section .container .contact-box .contact-detail .left .mail-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--text-color);
+}
+
+.contact-section .container .contact-box .contact-detail .left .mail-left h4 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.contact-section .container .contact-box .contact-detail .left .social-links{
+    display: flex;   
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-section .container .contact-box .contact-detail .left .social-links i{
+    font-size: 40px;
+}
+
+.contact-section .container .contact-box .contact-detail .right {
+    padding: 20px 25px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-section .container .contact-box .contact-detail .right h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.contact-section .container .contact-box .contact-detail .right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.contact-section .container .contact-box .contact-detail .right form .fields {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-section .container .contact-box .contact-detail .right form .fields input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    background-color: #FAF7F5;
+}
+
+.contact-section .container .contact-box .contact-detail .right form .message {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 70px;
+}
+
+.contact-section .container .contact-box .contact-detail .right form .message textarea {
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background-color: #FAF7F5;
+
+}
+
+.submit-btn {
+    outline: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* max-width: 140px; */
+    height: 40px;
+    border-radius: 0.5em;
+    box-shadow: 0 0.625em 1em 0 #606060;
+    overflow: hidden;
+}
+
+.submit-btn div {
+    transform: translateY(0px);
+    width: 100%;
+}
+
+.submit-btn,
+.submit-btn div {
+    transition: 0.6s cubic-bezier(.16, 1, .3, 1);
+}
+
+.submit-btn div span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 40px;
+    padding: 0.75em 1.125em;
+}
+
+.submit-btn div:nth-child(1) {
+    background-color: #333333;
+}
+
+.submit-btn div:nth-child(2) {
+    background-color: #21dc62;
+}
+
+.submit-btn:hover {
+    box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
+}
+
+.submit-btn:hover div {
+    transform: translateY(-40px);
+}
+
+.submit-btn p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.submit-btn:active {
+    transform: scale(0.95);
+}
+
+@media (max-width:730px) {
+    .contact-section .container .contact-box .contact-detail {
+        flex-direction: column-reverse;
+    }
+
+    .contact-section .container .contact-box .heading p{
+        font-size: 19px;
+    }
+
+    .contact-section .container .contact-box .contact-detail .left {
+        width: 100%;
+    }
+
+    .contact-section .container .contact-box .contact-detail .right {
+        width: 100%;
+    }
+}
+
+@media (max-width:440px) {
+
+    .contact-section .container .contact-box .heading{
+        padding: 0px 20px;
+    }
+
+    .contact-section .container .contact-box .heading p{
+        font-size: 16px;
+    }
+    
+.contact-section .container {
+    padding: 30px 0px;
+}
+
+}

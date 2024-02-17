@@ -91,4 +91,14 @@
     .hero-section .container .hero-detail h2{
         font-size: 37px;
     }
+
+    .hero-section .container .hero-detail p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:340px) {
+    .hero-section .container .hero-detail h2{
+        font-size: 30px;
+    }
 }

@@ -2,13 +2,67 @@ import React from 'react'
 import './homeProduct.css'
 import { Link } from 'react-router-dom'
 
-function WomenProduct({womendata}) {
+function WomenProduct() {
+  const pass = (item) => {
+    const encodedItem = btoa(JSON.stringify(item)); // Encode the item object to Base64
+    window.location.href = `/single-product/${encodedItem}`;
+  };
+
+  const womendata = [
+    {
+        sno: 1,
+        category:'Women',
+        name: 'MPOL001',
+        dec: 'Our Golf Polos are specifically designed for those twists & turns.',
+        size: ' XS to 3XL',
+        img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
+        tag: 'Sale!',
+        discountprice: 'Rs.2000',
+        price:'Rs.499'
+    },
+    {
+        sno: 2,
+        category:'Women',
+        name: 'MPOL006',
+        dec: 'Polos with 100% polyester , quick dry and soft on skin. ',
+        size : ' XS to 3XL',
+        img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
+        tag: 'Sale!',
+        discountprice: 'Rs.2000',
+        price:'Rs.499'
+    },
+    {
+        sno: 3,
+        category:'Women',
+        name: 'MPOL008',
+        dec: ' The Mars Polo with FABTECH(R) technology is designed for all day ultra cool comfort.',
+        size: ' XS to 3XL',
+        img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
+        tag: 'Sale!',
+        discountprice: 'Rs.2000',
+        price:'Rs.499'
+    },
+    {
+        sno: 4,
+        category:'Women',
+        name: '1986BK',
+        dec: 'Our printed tees will not only make you feel good but they are truly comfortable.',
+        size: ' XS to 3XL',
+        img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
+        tag: 'Sale!',
+        discountprice: 'Rs.2000',
+        price:'Rs.499'
+    }
+]
   return (
     <>
+    <div className="product-heading">
+        <span>Womens Product</span>
+      </div>
       <div className='product-row'>
         {
           womendata && womendata.map((item, index) => (
-            <div className='col' key={index}>
+            <div onClick={() => pass(item)} className='col' key={index}>
                 <div className="img">
                     <img src={item.img} alt="product-img" />
                     <p className='tag'>

@@ -28,7 +28,7 @@ const HomeProduct = () => {
         setKid(true);
     }
 
-    const mendata = () => [
+    const mendata = [
         {
             sno: 1,
             category: 'Men',
@@ -37,8 +37,8 @@ const HomeProduct = () => {
             size: ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         },
         {
             sno: 2,
@@ -48,8 +48,8 @@ const HomeProduct = () => {
             size : ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         },
         {
             sno: 3,
@@ -59,8 +59,8 @@ const HomeProduct = () => {
             size: ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         },
         {
             sno: 4,
@@ -70,8 +70,8 @@ const HomeProduct = () => {
             size: ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         }
     ]
 
@@ -84,8 +84,8 @@ const HomeProduct = () => {
             size: ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         },
         {
             sno: 2,
@@ -95,8 +95,8 @@ const HomeProduct = () => {
             size : ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         },
         {
             sno: 3,
@@ -106,8 +106,8 @@ const HomeProduct = () => {
             size: ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         },
         {
             sno: 4,
@@ -117,8 +117,8 @@ const HomeProduct = () => {
             size: ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         }
     ]
 
@@ -131,8 +131,8 @@ const HomeProduct = () => {
             size: ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         },
         {
             sno: 2,
@@ -142,8 +142,8 @@ const HomeProduct = () => {
             size : ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         },
         {
             sno: 3,
@@ -153,8 +153,8 @@ const HomeProduct = () => {
             size: ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         },
         {
             sno: 4,
@@ -164,8 +164,30 @@ const HomeProduct = () => {
             size: ' XS to 3XL',
             img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
             tag: 'Sale!',
-            discountprice: 2000,
-            price:499
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
+        },
+        {
+            sno: 4,
+            category:'Kids',
+            name: '1986BK',
+            dec: 'Our printed tees will not only make you feel good but they are truly comfortable.',
+            size: ' XS to 3XL',
+            img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
+            tag: 'Sale!',
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
+        },
+        {
+            sno: 4,
+            category:'Kids',
+            name: '1986BK',
+            dec: 'Our printed tees will not only make you feel good but they are truly comfortable.',
+            size: ' XS to 3XL',
+            img: 'https://i.ibb.co/yY606cs/photo-1600328759671-85927887458d.jpg',
+            tag: 'Sale!',
+            discountprice: 'Rs.2000',
+            price:'Rs.499'
         }
     ]
 
@@ -189,7 +211,7 @@ const HomeProduct = () => {
 
                     {
                         men ? (
-                            <MenProduct mendata={mendata()}/>
+                            <MenProduct mendata={mendata}/>
                         ) : women ? (
                             <WomenProduct womendata={womendata}/>
                         ):(

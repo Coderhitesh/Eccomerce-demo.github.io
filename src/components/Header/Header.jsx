@@ -54,13 +54,13 @@ const Header = () => {
                                 <Link onMouseEnter={openHandleChange} onMouseLeave={closeHandleChange} className='dropdown-relative'>
                                     All Product <i class="ri-arrow-down-s-line"></i>
                                     <ul className={`dropdown-1 ${isOpenMenu ? "show" : ""}`}>
-                                        <Link onClick={mobHandleClose} to={'/t-shirt'}>T-Shirt</Link>
-                                        <Link onClick={mobHandleClose} to={'/pant'}>Pant</Link>
-                                        <Link onClick={mobHandleClose} to={'/shirt'}>Shirt</Link>
+                                        <Link onClick={mobHandleClose} to={'/mens'}>Mens</Link>
+                                        <Link onClick={mobHandleClose} to={'/womens'}>Womens</Link>
+                                        <Link onClick={mobHandleClose} to={'/kids'}>Kids</Link>
                                     </ul>
                                 </Link>
                                 <Link onClick={mobHandleClose} to={'/contact'}>Contact</Link>
-                                <Link onClick={mobHandleClose} to={'/acount'}>Account</Link>
+                                <Link onClick={mobHandleClose} to={'/about'}>About</Link>
                             </ul>
                         </nav>
                         <div className='menu'>

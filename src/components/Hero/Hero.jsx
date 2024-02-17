@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="container">
             <div className="hero-detail">
                 <h2>CUSTOMIZED PRINTED TEES</h2>
-                <p>Nam at congue diam etiam erat lectus, finibus eget commodo quis, congue diam etiam erat lectus.</p>
+                <p>Stay on-trend with exclusive prints and comfortable fabrics</p>
                 <Link to={'/product'}>Explore Store <i class="ri-arrow-right-double-fill"></i></Link>
             </div>
             

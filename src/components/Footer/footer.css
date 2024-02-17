@@ -1,0 +1,82 @@
+footer{
+    width: 100%;
+}
+
+footer .container{
+    background-color: #415161;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 30px 70px;
+
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+footer .container .col-same{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .container .col-same h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+footer .container .col1 .img img{
+    width: 30%;
+}
+
+footer .container .col1 p{
+    font-size: 16px;
+}
+
+footer .container .col2 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+footer .container .col2 ul li a{
+    font-size: 17px;
+}
+
+footer .container .col3 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+footer .container .col4 .contactinfobox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+@media (max-width:950px) {
+    footer .container{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer .container .col-same{
+        width: 48%;
+    }
+}
+
+@media (max-width:680px) {
+    footer .container .col-same{
+        width: 100%;
+    }
+}
+
+@media (max-width:440px) {
+    footer .container{
+        padding: 30px 30px;
+    }
+}
