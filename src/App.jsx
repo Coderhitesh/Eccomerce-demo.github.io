@@ -10,6 +10,7 @@ import MenProduct from './components/HomeProduct/MenProduct'
 import WomenProduct from './components/HomeProduct/WomenProduct'
 import KidsProduct from './components/HomeProduct/KidsProduct'
 import About from './components/About/About'
+import Privacy from './components/Privacy/Privacy'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/kids' element={<KidsProduct/>}/>
           <Route path='/route' element={<KidsProduct/>}/>
           <Route path='/about' element={<About/>}/>
+          <Route path='/privacy' element={<Privacy/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

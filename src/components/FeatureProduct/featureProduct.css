@@ -71,6 +71,7 @@
     background-size: 290px;
     background-position: -7px;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .featureproduct-section .container .row-1 .col-2::after{

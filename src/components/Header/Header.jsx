@@ -63,11 +63,11 @@ const Header = () => {
                                 <Link onClick={mobHandleClose} to={'/about'}>About</Link>
                             </ul>
                         </nav>
-                        <div className='menu'>
-                            <i class="ri-menu-line" onClick={mobHandleChange}></i>
-                        </div>
                         <div className='cart' >
                             <i class="ri-shopping-cart-fill"></i>
+                        </div>
+                        <div className='menu'>
+                            <i class="ri-menu-line" onClick={mobHandleChange}></i>
                         </div>
                     </div>
                 </div>

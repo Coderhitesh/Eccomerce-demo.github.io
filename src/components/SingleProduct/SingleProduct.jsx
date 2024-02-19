@@ -33,8 +33,8 @@ function SingleProductComponent() {
                         <span className='cat'>{itemData.category}</span>
                         <h2 className='name'>{itemData.name}</h2>
                         <div className="price">
-                            <del className='dis'>Rs.{itemData.discountprice}</del>
-                            <span className='price'>Rs. {itemData.price}</span>
+                            <del className='dis'>{itemData.discountprice}</del>
+                            <span className='price'>{itemData.price}</span>
                         </div>
                         <span className='dec'>{itemData.dec}</span>
                         <div className="star">
