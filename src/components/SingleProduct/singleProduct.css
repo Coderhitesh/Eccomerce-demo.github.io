@@ -18,8 +18,8 @@
     background: rgba(255, 255, 255, 0.27);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
+    /* backdrop-filter: blur(0px); */
+    /* -webkit-backdrop-filter: blur(0px); */
     border: 1px solid rgba(255, 255, 255, 0.3);
     overflow: hidden;
 }
@@ -32,7 +32,6 @@
 
 .single-product-section .container .main-box-single .left img{
     width: 80%;
-    /* height: 90%; */
     border-radius: 10px;
     object-fit: cover;
 }
@@ -126,17 +125,84 @@
     transform: scale(0.95);
 }
 
+@media (max-width:740px) {
+    
+.single-product-section .container .main-box-single .left{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end ;
+}
+
+.single-product-section .container .main-box-single .left img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+}
+
 @media (max-width:600px) {
     .single-product-section .container .main-box-single{
-        height: 400px;
+        height: auto;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
     }
     
     .single-product-section .container .main-box-single .left{
-        width: 40%;
+        width: 100%;
         display: flex;
         justify-content: flex-end ;
     }
+    
+    .single-product-section .container .main-box-single .left img{
+        height: 300px;
+    }
+
+    .single-product-section .container .main-box-single .right{
+        width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+    
+.single-product-section .container {
+    padding: 30px 30px;
+}
+.single-product-section .container .main-box-single .right .cat{
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.single-product-section .container .main-box-single .right .name{
+    font-size: 22px;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+
+
+.single-product-section .container .main-box-single .right .dis{
+    color: red;
+    font-size: 15px;
+}
+
+.single-product-section .container .main-box-single .right .price{
+    font-size: 15px;
+}
+
+.single-product-section .container .main-box-single .right .dec{
+    font-size: 14px;
+}
+
+.single-product-section .container .main-box-single .right .star i{
+    font-size: 15px;
+}
+
+.single-product-section .container .main-box-single .right .size{
+    font-size: 15px;
+}
+    
+.single-product-section .container .main-box-single .left img{
+    height: 250px;
+}
 }
